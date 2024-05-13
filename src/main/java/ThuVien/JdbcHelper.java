@@ -15,11 +15,11 @@ public class JdbcHelper {
     private static String driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver";
     private static String dburl = "jdbc:sqlserver://localhost;database=DuanCoffee";
     private static String username = "sa";
-    private static String password = "123456";
+    private static String password = "123";
     /* 
 *	Nạp driver 
      */ static {
-        try {
+        try {	
             Class.forName(driver);
         } catch (ClassNotFoundException ex) {
             throw new RuntimeException(ex);

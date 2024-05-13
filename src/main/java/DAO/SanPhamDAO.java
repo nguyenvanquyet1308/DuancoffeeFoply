@@ -133,6 +133,17 @@ public class SanPhamDAO extends CoffeeDao<SanPham, String> {
         String SQL = "SELECT * FROM SanPham WHERE TenSP LIKE ?";
         return this.selectBySQL(SQL, "%" + keyword + "%");
     }
+    public int countSanPham() {
+		String COUNT_SQL = "SELECT COUNT(*) AS count FROM SanPham";
+		try (ResultSet rs = JdbcHelper.executeQuery(COUNT_SQL)) {
+			if (rs.next()) {
+				return rs.getInt("count");
+			}
+		} catch (SQLException e) {
+			throw new RuntimeException(e);
+		}
+		return 0;
+	}
      
 
 }

@@ -25,7 +25,7 @@ public class MyQuery {
     public Connection getConnection() {
         Connection con = null;
         try {
-            con = DriverManager.getConnection("jdbc:sqlserver://localhost;database=Duancoffee", "sa", "123456");
+            con = DriverManager.getConnection("jdbc:sqlserver://localhost;database=Duancoffee", "sa", "123");
         } catch (SQLException ex) {
             Logger.getLogger(Query.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -30,7 +30,7 @@ public class Login extends javax.swing.JDialog {
     }
 
     void dangNhap() {
-        String manv = txtUser.getText();
+        String manv = txtUser.getText();	
         String matkhau = new String(txtPassword.getText());
         NhanVien nhanVien = dao.selectById(manv);
         if (nhanVien == null) {

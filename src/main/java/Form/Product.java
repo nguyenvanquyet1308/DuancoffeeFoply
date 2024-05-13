@@ -7,7 +7,7 @@ package Form;
 import DAO.LoaiDAO;
 import DAO.SanPhamDAO;
 import Entity.Loai;
-import Entity.SanPham;
+
 import FormImport.addProduct;
 import FormImport.addtype;
 import JavaSwingThuVien.MyQuery;
@@ -16,8 +16,7 @@ import JavaSwingThuVien.TheModel;
 import ThuVien.Auth;
 import ThuVien.DialogHelper;
 import java.awt.Image;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+
 import java.util.ArrayList;
 import java.util.List;
 import javax.swing.ImageIcon;

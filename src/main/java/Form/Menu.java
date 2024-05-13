@@ -1785,7 +1785,7 @@ public class Menu extends javax.swing.JInternalFrame {
                 try {
                     Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                     String url = "jdbc:sqlserver://localhost:1433;databaseName=DuanCoffee";
-                    Connection con = DriverManager.getConnection(url, "sa", "123456");
+                    Connection con = DriverManager.getConnection(url, "sa", "123");
                     String sql = "select MaHD,khachhang.MaKH,TenKH,SDT from hoadon inner join KhachHang on HoaDon.MaKH = KhachHang.MaKH where KhachHang.MaBan = ?";
                     rs = JdbcHelper.executeQuery(sql, maban);
                     while (rs.next()) {
@@ -1811,7 +1811,7 @@ public class Menu extends javax.swing.JInternalFrame {
                 try {
                     Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
                     String url = "jdbc:sqlserver://localhost:1433;databaseName=DuanCoffee";
-                    Connection con = DriverManager.getConnection(url, "sa", "123456");
+                    Connection con = DriverManager.getConnection(url, "sa", "123");
                     String sql = "select MaHD,khachhang.MaKH,TenKH,SDT from hoadon inner join KhachHang on HoaDon.MaKH = KhachHang.MaKH where KhachHang.MaBan = ? and trangthai =0";
                     rs = JdbcHelper.executeQuery(sql, maban);
                     while (rs.next()) {
